@@ -1,0 +1,135 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "comandos_de_continuidade",
+              "type": "comandos_de_continuidade"
+            }
+          ],
+          "name": "intencao_de_continuidade",
+          "samples": [
+            "{comandos_de_continuidade}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "comandos_diretos",
+              "type": "comandos_diretos"
+            }
+          ],
+          "name": "intencao_direta",
+          "samples": [
+            "{comandos_diretos}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "comandos_de_finalizacao",
+              "type": "comandos_de_finalizacao"
+            }
+          ],
+          "name": "intencao_de_finalizacao",
+          "samples": [
+            "{comandos_de_finalizacao}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "comandos_de_espera",
+              "type": "comandos_de_espera"
+            }
+          ],
+          "name": "intencao_de_espera",
+          "samples": [
+            "{comandos_de_espera}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "desligar led tv"
+                ],
+                "value": "ledtvoff"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "ligar led tv"
+                ],
+                "value": "ledtvon"
+              }
+            }
+          ],
+          "name": "comandos_de_continuidade"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "portao"
+              }
+            },
+            {
+              "name": {
+                "value": "temperatura"
+              }
+            }
+          ],
+          "name": "comandos_diretos"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "não"
+              }
+            }
+          ],
+          "name": "comandos_de_finalizacao"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "espere"
+              }
+            }
+          ],
+          "name": "comandos_de_espera"
+        }
+      ],
+      "invocationName": "atenção"
+    }
+  }
+}
