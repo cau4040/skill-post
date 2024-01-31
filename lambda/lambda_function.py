@@ -1,8 +1,8 @@
 #POST_Node-Red
 
-URL = "https://note.convergedigital.com.br/post"
-USUARIO ="carlos"
-SENHA = "261297"
+URL = "https://note.convergedi.com.br/post"
+USUARIO ="car"
+SENHA = "26"
 
 import requests
 import time
